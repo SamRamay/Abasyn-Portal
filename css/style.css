@@ -30,7 +30,7 @@ body a{
 }
 .row{
 	margin:0;
-}	
+}
 .breadcrumb{
 	margin:2em 0;
 	text-align:left;
@@ -47,11 +47,11 @@ h1.b1, h2.b2, h3.b3 {
 }
 .logo{
 	float:left;
-	margin-left:5em;
+  margin-left:5em;
 }
 .top-menu{
-	float:right;
-	  background: #4dc47d;
+	float:left;
+	background: #4dc47d;
   margin: 3em 0 0 0;
   padding:0 11em 0 0em;
 }
@@ -65,6 +65,8 @@ h1.b1, h2.b2, h3.b3 {
 	padding:1em 1em;
 	text-decoration:none;
 }
+
+
 .top-menu ul li.active a,.top-menu ul li a:hover{
 	color:#fff;
 }
@@ -149,13 +151,14 @@ ul.callbacks_tabs.callbacks1_tabs {
 	background:#fff;
 	padding:1em;
 }
-.grid_info:nth-child(2){	
-	padding-top:1.2em;	
+.grid_info:nth-child(2){
+	padding-top:1.2em;
 }
 .blg-pic {
   width: 20%;
   float: left;
 }
+
 .blg-pic img {
   border-radius:50%;
   border: 2px solid #dcdcdc;
@@ -192,7 +195,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .more a{
 	display:inline-block;
 	color:#26c159;
-	text-decoration:none;	
+	text-decoration:none;
 	font-size:0.9em;
 }
 .news-grid {
@@ -489,7 +492,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   margin-bottom: 0.7em;
 }
 .video-info h4 {
-  color:#4dc47d; 
+  color:#4dc47d;
     font-family: 'Ubuntu-Medium';
   font-size: 1.1em;
   margin-bottom: 0.5em;
@@ -570,10 +573,10 @@ h3.ghj {
 	  width: 23.5%;
   margin: 0 17px 22px 0;
   float: left;
-  
+
 }
 .event-pics a img{
-	width:100%;	
+	width:100%;
 }
 /*----blog----*/
 .blog{
@@ -706,7 +709,7 @@ a.list-group-item:hover {
 .posts-right{
 	float:right;
 	width: 51%;
-}	
+}
 .posts-right lable {
 	font-size: 14px;
 	font-weight: 500;
@@ -719,8 +722,8 @@ a.list-group-item:hover {
   margin: 3px 0;
   line-height: 1.6em;
 }
-.posts-right h5 a:hover{	
-	color: #2f6818;	
+.posts-right h5 a:hover{
+	color: #2f6818;
 }
 .blog-info {
   margin-bottom: 2em;
@@ -1188,7 +1191,7 @@ font-weight:600;
   line-height: 1.7em;
 }
 .response-text-right ul{
-	padding:0;	
+	padding:0;
 	text-align: right;
 	margin-top: 0.5em;
 }
@@ -1689,7 +1692,7 @@ margin: 2em 0 0 0;
   padding: 0;
 }
 .blog-ctgry {
-  margin: 0px 0 2em 0; 
+  margin: 0px 0 2em 0;
 }
 .list-group {
   margin-top: 16px;
@@ -1751,7 +1754,7 @@ a.list-group-item {
 }
 span.menu:before {
 	content: url(../images/nav-icon.png);
-	cursor: pointer;	
+	cursor: pointer;
 	height:32px;
 }
 ul.navig {
@@ -2254,5 +2257,4 @@ address{
 }
 ul.navig {
   padding:0.6em 0;
-}
 }
