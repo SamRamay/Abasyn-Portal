@@ -1,42 +1,124 @@
-#sidebar-wrapper{
-  z-index: 1;
-  position: absolute;
-  width: 0;
+html, body {
+   height: 100%;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+.display-table{
+  display: table;
+  padding: 0px;
   height: 100%;
-  overflow-y: hidden;
-  background: #2c3e50;
-} 
-
-#page-content-wrapper{
   width: 100%;
-  position: absolute;
-  padding: 15px;
 }
 
-#wrapper.menuDisplayed #sidebar-wrapper{
-  width: 250px;
+.display-table-row{
+  display: table-row;
+  height: 100%;
 }
 
-#wrapper.menuDisplayed #page-content-wrapper {
-  padding-left: 250px;
+.display-table-cell{
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+.wrapper:after,
+.column:after {
+    clear: both;
 }
 
-.sidebar-nav{
-  padding: 0;
-  list-style: none;
+#sidebar {
+    background-color: #eee;
+    padding-left: 0;
+    float: left;
+    min-height: 100%;
 }
 
-.sidebar-nav li{
-  text-indent: 20px;
-  line-height: 40px;
+#sidebar .collapse.in {
+    display: inline;
 }
 
-.sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: #ddd;
+#sidebar > .nav>li>a {
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.sidebar-nav li a:hover {
-  background: #16A085;
+#main {
+    padding: 15px;
+    left: 0;
+}
+
+
+
+/*
+ * off canvas sidebar
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        min-width: 44px;
+    }
+
+    #main {
+        width: 1%;
+        left: 0;
+    }
+
+    #sidebar .visible-xs {
+       display:inline !important;
+    }
+
+
+    .row-offcanvas {
+       position: relative;
+       -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+       transition: all 0.4s ease-in-out;
+    }
+
+    .row-offcanvas-left.active {
+       left: 45%;
+    }
+
+    .row-offcanvas-left.active .sidebar-offcanvas {
+       left: -45%;
+       position: absolute;
+       top: 0;
+       width: 45%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left.active {
+    left: 3%;
+  }
+
+  .row-offcanvas-left.active .sidebar-offcanvas {
+    left: -3%;
+    position: absolute;
+    top: 0;
+    width: 3%;
+    text-align: center;
+    min-width:42px;
+  }
+
+  #main {
+    left: 0;
+  }
 }

@@ -1,0 +1,150 @@
+html, body {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #676a6c;
+  height: 100%;
+}
+
+.box{
+  border: 1px red dotted;
+}
+
+#side-menu {
+  background-color: #4dc47d;
+  padding: 0px;
+}
+
+#side-menu h1{
+  color: #1f3647;
+  text-align: center;
+  margin: 13.4px 0px;
+  font-size: 25px;
+}
+
+#side-menu ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#side-menu a{
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  display: block;
+}
+
+#side-menu .glyphicon{
+    margin-right: 6px;
+}
+
+#side-menu a:hover {
+  background-color: black;
+  color: #4dc47d;
+  display: block;
+}
+
+#side-menu .active a{
+ background-color: white;
+ color: #4dc47d;
+}
+
+#side-menu .collapseable li{
+  padding-left: 20px;
+}
+
+.display-table{
+  display: table;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.display-table-row{
+  display: table-row;
+  height: 100%;
+}
+
+.display-table-cell{
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+
+.valign-top{
+  vertical-align: top;
+}
+
+#nav-header{
+  background-color: #d9d9d9;
+  border-bottom: 1px solid #e7eaec;
+}
+
+#nav-header #header-search-field{
+  padding-top: 17px;
+  vertical-align: center;
+  background-color: #d9d9d9;
+  color: #000;
+  border: none;
+  width: 300px;
+  outline: none;
+}
+
+#nav-header ul{
+  margin: 0px;
+  padding: opx;
+  list-style: none;
+  color: #676a6c;
+}
+
+#nav-header ul li {
+  float: left;
+  margin-left: 15px;
+  padding: 17px 0px;
+}
+
+#nav-header ul .glyphicon {
+  color: #676a6c;
+}
+
+.label-message {
+  background-color: #1ab397;
+}
+
+#nav-header ul a{
+  text-decoration: none;
+}
+
+#nav-header .logout{
+  color: #676a6c;
+}
+
+#nav-header .logout:hover{
+  color: #676a6c;
+}
+
+#nav-header #welcome-message{
+  margin-right: 20px;
+}
+
+#nav-header ul .label {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -5px;
+}
+
+#nav-header .fixed-width{
+  width: 35px;
+}
+
+#admin-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: white;
+  padding: 10px;
+  font-size: 12px;
+  color: #676a6c;
+}
